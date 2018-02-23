@@ -30,6 +30,7 @@ export default {
 
 | 属性字段 | 类型 | 可用 | 描述 |
 |-----|------|--------------|-------------|
+| `app` | Root Vue Instance | 客户端 & 服务端 | 根Vue实例，包括你所有的插件。例如，当用Axios，你可以通过上下文`context.app.$axios`获得`$axios`实例。 |
 | `isClient` | Boolean | 客户端 & 服务端 | 是否来自客户端渲染 |
 | `isServer` | Boolean | 客户端 & 服务端 | 是否来自服务端渲染 |
 | `isDev` | Boolean | 客户端 & 服务端 | 是否是开发(dev) 模式，在生产环境的数据缓存中用到 |
